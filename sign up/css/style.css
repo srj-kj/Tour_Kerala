@@ -1,0 +1,167 @@
+*
+
+{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body
+{
+  background: rgb(255, 255, 255);
+}
+.row
+{
+  background: #d46593;
+  border-radius: 30px;
+  
+}
+img
+{
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding-left: -50%;
+  transform: translate(-2.3%);
+}
+.btn1{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.btn1:hover{
+    background-color: white ;
+    border: 2px solid;
+    color: black;
+}
+.col-lg-7{
+    transform: translate(20%,2%);
+}
+a{
+    text-decoration: none;
+}
+#head{
+    transform: translate(11%,5%);
+}
+
+
+/* ################################## Password strength indicator Design ################################################ */
+.indicator{
+	height: 5px;
+	width: 100%;
+	margin-top: 10px;
+	margin-left: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	display: none;
+	transition: all 1s;
+  }
+
+.indicator span{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: lightgrey;
+	border-radius: 5px;
+  }
+.indicator span:nth-child(2){
+	margin: 0 3px;
+  }
+.indicator span.active:before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+  }
+.indicator span.weak:before{
+	background-color: #ff4757;
+  }
+.indicator span.medium:before{
+	background-color: orange;
+  }
+.indicator span.strong:before{
+	background-color: #23ad5c;
+  }
+/* ################################## Pass strength text Design ################################################ */
+.text{
+	font-size: 15px;
+	margin-left: 30px;
+    font-variant-alternates: ornaments();
+    font-weight: 600;
+	display: none;
+	margin-bottom: 2px;
+  }
+.text.weak{
+	color: #ff4757;
+  }
+.text.medium{
+	color: orange;
+  }
+.text.strong{
+	color: #23ad5c;
+  }
+
+  .col-lg-7 input:focus {
+    outline: 0;
+    border-color: rgba(0, 81, 255, 0.534);
+  }
+  
+  .col-lg-7.success input {
+    border-color: #2ecc71;
+  }
+  
+  .col-lg-7.error input {
+    border-color: #e74c3c;
+  }
+
+    .col-lg-7 small {
+      color: #e74c3c;
+      position: absolute;
+      margin-left: 30px;
+      bottom: 0;
+      left: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+    }
+    
+    .col-lg-7.error small {
+      visibility: visible;
+    }
+
+    
+
+
+/* footer */
+.footer{
+  width: 100%;
+  min-height: 100px;
+  padding: 20px;
+  margin: 100;
+  background: #fc036b ;
+}
+.footer p{
+  color: whitesmoke;
+  margin: 10px auto;
+  padding: 20px auto;
+}
+.foot{
+  text-align: center;
+  font-weight: bold;
+}
+.main-nav{
+  font-weight: bold;
+  color: #fc036b;
+}
+.main-nav a{
+  color: #fc036b;
+}

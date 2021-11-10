@@ -1,0 +1,299 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/header-bg.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn:hover,
+.btn:active
+ {
+background-color: #fc036b;
+}
+.btn-full:link,
+.btn-full:visited
+{
+    
+    border: 2px solid #fc036b;
+    background-color: #fc036b;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #fff;
+    color: #fff;
+   
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 2px solid;
+    background-color: #fc036b;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #fc036b;
+    color: #fff;
+}
+
+/* == Events == */
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+}
+.para{
+    font-size: 4vmin;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: center;  
+}
+a{
+    text-decoration: none;
+     color: #fc036b ; 
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------- */
+/* Experience Kerala*/
+/* ----------------------------------------------- */
+ .row{
+     display: flex;
+     align-items: center;
+ }
+ .row .col{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .events .row{
+     margin-top: 50px;
+ }
+ h4{
+     font-size: 3vmin;
+     color: #484872;
+     font-size: 110%;
+     margin-bottom: 15px;
+
+ }
+ h3{
+    color: #484872;
+ }
+ p{
+     justify-content: center;
+     padding: 4px 60px;
+     text-align: justify;
+ }
+
+
+ .carousel-item {
+    background: url(../images/walk.jpg) no-repeat;
+    background: cover;
+    height: 38rem;
+}
+
+ .carousel-item:nth-child(2) {
+    background: url(../images/trekking.jpg) no-repeat;
+    background-size: cover;
+    height: 38rem;
+  }
+  .carousel-item:nth-child(3) {
+    background: url(../images/house\ boat.jpeg) no-repeat ;
+    background-size: cover;
+    height: 38rem;
+  }
+  .carousel-item:nth-child(4) {
+    background: url(../images/wld\ life.jpg) no-repeat ;
+    background-size: cover;
+    height: 38rem;
+  }
+  .carousel-item:nth-child(5) {
+    background: url(../images/fest.jpg) no-repeat ;
+    background-size: cover;
+    height: 38rem;
+  }
+   .carousel-item:nth-child(6) { 
+    background: url(../images/ayur.jpg) ;
+    background-size: cover;
+    height: 38rem;
+  } 
+
+   /* animations */
+ img{
+
+    transition: transform .3s ease;
+ }
+ img:hover{
+     transform: scale(1.1);
+ }
+  .carousel-item{ 
+     background: cover;
+ }
+
+ .long-text{
+    text-align: justify;
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 6%;
+}
+
+
+ .icon-big {
+    font-size: 250%;
+    display: block;
+    color: #fc036b;
+    margin-bottom: 10px;
+    text-align: justify;
+    
+}
+
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #fc036b;
+    font-size: 120%;
+    margin-right: 10px;
+    
+   
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+section.destinations {
+    padding-left : 105%;
+    padding-right: 3%;
+    
+}
+
+.destinations-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.destinations-showcase li{
+    display: block;
+    float: left;
+    width: 14.2%;
+}
+
+.destinations-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.destinations-photo img {
+    
+    opacity: .4 ;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    
+}
+
+.destinations-photo img:hover {
+    opacity: 1;
+    color: #fff;
+       transform: scale(1);
+}
+.destinations-name p{
+    font-size: 100%;
+    color: rgba(255, 255, 255, 0.801);
+    z-index: 2;
+    position: absolute;
+    transform: translate(-5%, -150%);
+    text-align: center;  
+}
+/* footer */
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
+    margin: 0;
+    background: #fc036b ;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+.foot{
+    text-align: center;
+    font-weight: bold;
+}
+.main-nav{
+    font-weight: bold;
+}
+
+
+
+
+
